@@ -1,6 +1,6 @@
 # README
 
-Este repositório foi criado para propor a solução do seguinte desafio: Algarismos Romanos.
+Este repositório foi criado para propor a solução da conversão de números Arábicos para números Inteiros.
 
 ## <a name="tech_info"></a>Requisitos
 * Docker: (v 20.10.14)
@@ -8,7 +8,7 @@ Este repositório foi criado para propor a solução do seguinte desafio: Algari
 ## Setup
 1) Possuir Docker instalado na sua máquina (versão utilizada neste projeto de preferência)
 2) Possuir Docker Compose instalado
-3) Baixar este repositório com o comando: git clone git@github.com:SelecaoGlobocom/renan-proenca.git
+3) Baixar este repositório com o comando: git clone git@github.com:renanmaringolo/RomanArabicCalculator.git
 
 ### Testando a aplicação
 Atualmente o projeto conta com 71.34% de cobertura de teste, de acordo com o SimpleCov. (está baixo por causa do HomeController - pulei teste de integração)
@@ -26,7 +26,7 @@ Atualmente o projeto conta com 71.34% de cobertura de teste, de acordo com o Sim
  - selecione a opção 0 no Menu principal para sair, ou escolha "N" para não continuar com a aplicação. 
 
 ### Observação importante sobre o desenvolvimento:
-- Gostaria de pontuar que, ao desenvolver essa APP, tentei de forma simples e objetiva resolver o problema em questão. Eu limitei no método o número convertido, uma vez que o número é infinito e eu não consegui resolver para o infinito, então, tecnicamente isto pode ser considerado um BUG. Procurei testar todos os métodos que criei. Único controller não testado, é o HomeController, pois fui fazendo na mão e julgo que não precisou de teste para isso. Por fim, dei uma melhorada colocando biblioteca para coverage e joguei para tudo dentro do Docker. Usei RegEx para lidar com Matchers que vem do terminal e comparar a quantidade de caracteres, dessa forma, consegui extrair e converter para numeros Arábicos.
+- Gostaria de pontuar que, ao desenvolver essa APP, tentei de forma simples e objetiva resolver o problema em questão. Usei recursão para lidar com iterações de números, que são infinitos. A arquitetura é simples, mas bem dividida em: `App.rb`, responsável por rodar a aplicação em si - `Controller` responsável por chamar os `Services` e, os `Services`, responsáveis por receberem a lógica.
 
 ## Gems
 * RSpec (Ferramenta para criar testes automatizados. Gosto muito do padrão do RSpec, documentação bem tranquila de ler);
