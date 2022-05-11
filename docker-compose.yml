@@ -3,9 +3,9 @@ services:
   web:
     build:
       context: .
-    working_dir: /globo_challenge
+    working_dir: /zee_
     volumes:
-      - .:/globo_challenge/
+      - .:/zee_/
       - bundlerGemsCached:/usr/local/bundle
     command: bash -c "bundle install && bin/app.rb"
 

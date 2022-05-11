@@ -2,7 +2,7 @@
 
 class HomeController
   def self.menu
-    puts '==== Calculadora RomanoArábica da Globo ===='
+    puts '==== Calculadora RomanoArábica ===='
     puts '## Menu ##'
     puts '1 - Converter número Romano para Arábicos'
     puts '2 - Converter para número Romano'
@@ -52,7 +52,7 @@ class HomeController
     puts '         OOOOOO         OOOOOO         '
     puts '             OOOOOOOOOOOO              '
     puts
-    puts '    Globo, a gente se vê por aqui!     '
+    puts '             Até mais                  '
     puts
   end
 end
