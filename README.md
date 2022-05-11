@@ -1,6 +1,6 @@
 # README
 
-Este repositório foi criado para propor a solução da conversão de números Arábicos para números Inteiros.
+Este repositório foi criado para propor a solução da conversão de números Arábicos para números Romanos.
 
 ## <a name="tech_info"></a>Requisitos
 * Docker: (v 20.10.14)
