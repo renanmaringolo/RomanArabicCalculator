@@ -2,5 +2,5 @@ web:
 	docker-compose run \
 		--service-ports \
 		--rm \
-		--name zee-web \
+		--name app-web \
 		web
